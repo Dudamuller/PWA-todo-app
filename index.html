@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> App Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1> APP Todo-list </h1>
+
+    <form id="todo-form">
+
+    <fieldset>
+         <input type="text" id="todo-input" placeholder="Entre com um item"required>
+         <button tipe = "submit">+Adicionar</button>
+    </fieldset>
+    </form>
+    <ul id="Todo-list"></ul>
+    <script src="app.js"></script>
+    <script>
+     if('serviceWorker' in navigator) {
+     navigator.serviceWorker.register('/service-worker.js')
+     .then(registration =>{console.log('serviço Iniciado', registration.scope);})
+     .catch(error=> {console.log('falha na inicialização do serviço'),error});}
+    </script>
+</body>
+</html>
