@@ -1,0 +1,20 @@
+{
+    "name":" APP Todo-list",
+    "short_name": ".",
+    "start_url": "standalone",
+    "backgroud_color": "#ffffff",
+    "theme_color": "#3f51bc",
+    "icons": [
+        {
+            "src":"icons/ic192.png",
+            "sizes": "912x192",
+            "type": "image/pnj"
+        },
+        {
+            "src":"icons/ic192.png",
+            "sizes": "912x192",
+            "type": "image/pnj"
+        }
+    ]
+
+}
