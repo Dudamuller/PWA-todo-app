@@ -9,5 +9,5 @@ imput.value = "";
 function addTodo (task){
     const list = document.getElementById("todo-list");
     const listItem = task;
-    list appendChild(listItem);
+    list.appendChild(listItem);
 }
